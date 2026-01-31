@@ -39,9 +39,9 @@ class StartParser:
             phones=sorted(phones),
         )
 
-if __name__ == '__main__':
 
-    #parser = StartParser("https://xn----8sbpalkejf7aiscg.xn--p1ai/")
+if __name__ == '__main__':
+    # parser = StartParser("https://xn----8sbpalkejf7aiscg.xn--p1ai/")
     parser = StartParser("https://habr.com/")
     result = parser.parse()
 

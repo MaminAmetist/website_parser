@@ -1,7 +1,8 @@
 import re
 from typing import Set
-from bs4 import BeautifulSoup
+
 import idna
+from bs4 import BeautifulSoup
 
 
 class ContactExtractor:
