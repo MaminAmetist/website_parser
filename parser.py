@@ -56,7 +56,6 @@ class DomainParser:
 
     def _fetch(self, url: str) -> Response:
         """Загружает страницу."""
-        print(111111111111111111111111)
         headers = {"User-Agent": self.config.user_agent}
         response = requests.get(url, timeout=self.config.timeout, headers=headers)
         response.raise_for_status()
