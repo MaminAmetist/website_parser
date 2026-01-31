@@ -34,12 +34,20 @@ start_url: str
 
 ```bash
 
-ParseResult(url='https://xn----8sbpalkejf7aiscg.xn--p1ai/', emails=['export.evgeny@yandex.ru', 'info@ит-маркетплейс.рф'], phones=['+78314140552'])
+{
+url='https://xn----8sbpalkejf7aiscg.xn--p1ai/',
+emails=['export.evgeny@yandex.ru', 'info@ит-маркетплейс.рф'],
+phones=['+78314140552']
+}
 
 ```
 
 ```bash
-ParseResult(url='https://habr.com/', emails=['cli-stash@latest', 'corp@habr.team', 'simple-swizzle@0.2.3'], phones=['+74955324158', '+79260137005'])
+{
+url='https://habr.com/',
+emails=['cli-stash@latest', 'corp@habr.team', 'simple-swizzle@0.2.3'],
+phones=['+74955324158', '+79260137005']
+}
 ```
 
 Если контакты не найдены — возвращаются пустые списки.

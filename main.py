@@ -1,3 +1,4 @@
+from dataclasses import asdict
 from typing import Set
 
 from bs4 import BeautifulSoup
@@ -41,8 +42,8 @@ class StartParser:
 
 
 if __name__ == '__main__':
-    # parser = StartParser("https://xn----8sbpalkejf7aiscg.xn--p1ai/")
+    #parser = StartParser("https://xn----8sbpalkejf7aiscg.xn--p1ai/")
     parser = StartParser("https://habr.com/")
     result = parser.parse()
 
-    print(result)
+    print(asdict(result))
