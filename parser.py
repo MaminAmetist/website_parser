@@ -8,18 +8,16 @@ from requests import Response
 from requests.exceptions import RequestException
 
 from config import ParserConfig
-from html_loader import UniversalHtmlLoader
 
 
 class DomainParser:
     """Обходит страницы сайта в пределах одного домена."""
 
-    def __init__(self, start_url: str, config: ParserConfig, loader: UniversalHtmlLoader=None) -> None:
+    def __init__(self, start_url: str, config: ParserConfig) -> None:
         self.start_url = start_url
         self.config = config
         self.domain = urlparse(start_url).netloc
         self.visited: Set[str] = set()
-        self.loader = loader
 
     def crawl(self) -> Iterable[str]:
         """
@@ -49,10 +47,6 @@ class DomainParser:
             queue.extend(link for link in links if link not in self.visited)
 
             time.sleep(self.config.sleep_between_requests)
-
-    def _fetch_html(self, url: str) -> str:
-        return self.loader.load(url)
-
 
     def _fetch(self, url: str) -> Response:
         """Загружает страницу."""
