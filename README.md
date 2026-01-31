@@ -39,8 +39,7 @@ ParseResult(url='https://xn----8sbpalkejf7aiscg.xn--p1ai/', emails=['export.evge
 ```
 
 ```bash
-ParseResult(url='https://habr.com/', emails=['AlBorshchov@korusconsulting.ru', 'EOrlova@korusconsulting.ru', 'claude-code-reflection-skills@claude-code-reflection-skills', 'corp@habr.team', 'userHome@mail.ru'], phones=['+78123052197'])
-
+ParseResult(url='https://habr.com/', emails=['cli-stash@latest', 'corp@habr.team', 'simple-swizzle@0.2.3'], phones=['+74955324158', '+79260137005'])
 ```
 
 Если контакты не найдены — возвращаются пустые списки.
